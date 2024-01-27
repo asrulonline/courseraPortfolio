@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #ff80b3, #1a75ff, #cc66ff, #33cc33);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #000;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Header styles */
+.header-content {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header-content h1, .header-content h2 {
+    margin: 0;
+}
+
+/* Section styles */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.about-me, .skills, .portfolio {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Slideshow styles */
+.project-slideshow {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.project {
+    display: none;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons i {
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover i {
+    color: #ffcc00;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
+
+
+ /* Add these styles for rounded and responsive image */
+    .about-me img {
+        border-radius: 50%;
+        max-width: 100%; /* Ensure the image doesn't exceed its container */
+        height: 250px; /* Maintain aspect ratio */
+        display: block; /* Center the image */
+        margin: 20px auto; /* Add margin for spacing */
+    }
+	
+

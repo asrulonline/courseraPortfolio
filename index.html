@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Asrul Sarkawi - Portfolio</title>
+</head>
+<body>
+
+    <header id="home">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Asrul Sarkawi</h1>
+            <h2>Computer Science | Online Marketing | E-commerce</h2>
+        </div>
+    </header>
+
+    <section id="about" class="container about-me">
+        <center><h2>About Me</h2></center>
+        <img src="https://pics.craiyon.com/2023-07-27/d71981b000c648d58c423becc00a6bbc.webp" alt="Your Description" style="display: block; margin: 0 auto;"/>
+        <p style="text-align: justify;">
+            Hello! I am Asrul Sarkawi, a seasoned professional in the realm of web development and digital marketing. With a passion for crafting dynamic and user-friendly websites, I specialize in creating robust web applications that seamlessly blend functionality and aesthetics.
+        </p>
+    </section>
+
+    <section id="skills" class="container skills">
+    <h2>Skills</h2>
+    <div class="skill" id="web-dev">
+        <i class="fas fa-laptop-code"></i>
+        <strong>Web Development Expertise:</strong>
+        <p>
+            My proficiency in web development extends across the spectrum, from front-end technologies like HTML, CSS, and JavaScript to back-end frameworks like Node.js and Django. I thrive in architecting responsive and engaging websites that cater to diverse user experiences.
+        </p>
+    </div>
+    <div class="skill" id="mysql">
+        <i class="fas fa-database"></i>
+        <strong>Database MySQL Specialist:</strong>
+        <p>
+            As a MySQL expert, I am well-versed in database design, optimization, and management. I ensure that data is not just stored efficiently but is also easily retrievable, contributing to the overall performance and reliability of web applications.
+        </p>
+    </div>
+    <div class="skill" id="advertising">
+        <i class="fas fa-bullhorn"></i>
+        <strong>Advertising Mastery:</strong>
+        <p>
+            With a keen understanding of online marketing strategies, I excel in leveraging digital advertising platforms to maximize exposure and drive targeted traffic. My expertise spans across various advertising channels, ensuring optimal reach and engagement.
+        </p>
+    </div>
+    <div class="skill" id="ecommerce">
+        <i class="fas fa-shopping-cart"></i>
+        <strong>E-commerce Advertising Specialist:</strong>
+        <p>
+            In the dynamic landscape of e-commerce, I bring forth specialized skills in advertising. From creating compelling product campaigns to implementing strategies for increased conversion rates, I am dedicated to enhancing the online presence and profitability of e-commerce businesses.
+        </p>
+    </div>
+    <div class="skill" id="front-end">
+        <i class="fas fa-code"></i>
+        <strong>Front-end Frameworks:</strong>
+        <p>
+            Proficient in utilizing front-end frameworks such as React.js and Vue.js to create interactive and dynamic user interfaces.
+        </p>
+    </div>
+    <div class="skill" id="seo">
+        <i class="fas fa-search"></i>
+        <strong>SEO Optimization:</strong>
+        <p>
+            Experienced in implementing SEO strategies to enhance website visibility and rankings on search engines, contributing to increased organic traffic.
+        </p>
+    </div>
+    <!-- Add more skills as needed -->
+</section>
+    <section id="portfolio" class="container portfolio">
+        <h2>Portfolio</h2>
+        <div class="project-slideshow" id="project-slideshow">
+            <div class="project">
+                <img src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-443446.jpg" alt="Project 1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, dolor et varius convallis, eros orci elementum felis.</p>
+            </div>
+            <div class="project">
+                <img src="https://img.freepik.com/free-photo/snowy-mountain-peak-starry-galaxy-majesty-generative-ai_188544-9650.jpg" alt="Project 2">
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="project">
+                <img src="https://img.freepik.com/free-photo/snowy-mountain-peak-starry-galaxy-majesty-generative-ai_188544-9650.jpg" alt="Project 3">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Asrul Sarkawi - Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleSkill(skillId) {
+            var skillElement = document.getElementById(skillId);
+            skillElement.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
